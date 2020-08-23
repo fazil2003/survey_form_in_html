@@ -1,0 +1,141 @@
+<div class='header'>
+    <h1 id='title'><b>Survey Form</b> - Programmers Salary</h1>
+</div>
+
+<div class='container'>
+<p id='description'>This is a Simple Survey form for Programmers Salary.</p>
+
+
+<center>
+<form id='survey-form'>
+
+<label for='name' id='name-label'>Name:</label>
+<input type='text' id='name' placeholder='Enter your Name...' required /><br><br>
+
+<label for='email' id='email-label'>Email:</label>
+<input type='email' id='email' placeholder='Enter your Email Address...' required /><br><br>
+
+<label for='number' id='number-label'>Salary:</label>
+<input type='number' id='number' min='1000' max='10000' placeholder='Enter your Annual Salary(in USD)'required/><br><br>
+
+
+<label for='dropdown' id='dropdown-label'>Country:<br>
+<select id='dropdown' required >
+<option value=''>Select your Country</option>
+<option value='us'>United States</option>
+<option value='uk'>United kingdom</option>
+<option value='in'>India</option>
+</select>
+</label>
+<br><br>
+
+
+<div id='radio-group'>Are you Satisfy with your Salary?<br>
+<label><input type='radio' name='satisfaction' checked/> Satisfied</label><br>
+<label><input type='radio' name='satisfaction' /> Not Satisfied</label><br>
+<label><input type='radio' name='satisfaction' /> Prefer not to Say</label><br>
+</div>
+
+<br><br>
+
+<div id='checkbox-group'>Select the Programming/Scripting Languages you know?<br>
+<label><input type='checkbox' name='lang' value='java'/> Java</label><br>
+<label><input type='checkbox' name='lang' value='c' /> C</label><br>
+<label><input type='checkbox' name='lang' value='cpp'/> C++</label><br>
+<label><input type='checkbox' name='lang' value='python' /> Python</label><br>
+<label><input type='checkbox' name='lang' value='ruby' /> Ruby</label><br>
+<label><input type='checkbox' name='lang' value='perl'/> Perl</label><br>
+</div>
+
+<br><br>
+
+Additional Comments:<br>
+<textarea placeholder='Type Additional Comments here...'></textarea>
+
+<br><br>
+
+
+<button id='submit' type='submit'>Submit</button>
+<br><br>
+
+</form>
+</center>
+
+</div>
+
+
+
+<style>
+html{
+  font-family:Arial;
+  font-size:20px;
+  background-color:rgb(235,235,235);
+}
+.header{
+  top:0;
+  left:0;
+  z-index:2;
+  position:fixed;
+  width:100%;
+  height:50px;
+  background:linear-gradient(to right,orange 0%,tomato 50%,orange 100%);
+  color:white;
+  text-align:center;
+}
+#title{
+  top:0px;
+  position:relative;
+  font-size:20px;
+  font-weight:normal;
+}
+.container{
+	text-align:center;
+  margin-top:70px;
+  width:100%;
+  position:relative;
+}
+#description{
+color:tomato;
+}
+#survey-form{
+max-width:400px;
+padding:20px;
+border-radius:20px;
+border:1px solid grey;
+box-shadow:1px 2px 5px grey;
+background-color:white;
+text-align:left;
+font-size:18px;
+}
+
+input,button,textarea,select{
+font-size:18px;
+border-radius:5px;
+padding:7.5px;
+border:2px solid grey;
+outline:none;
+font-family:Arial;
+
+}
+#name,#email,#number,textarea,select{
+width:90%;
+}
+
+#name:focus,#email:focus,#number:focus,textarea:focus{
+border-color:tomato;
+}
+
+
+label{
+color:blue;
+font-size:16px;
+}
+#submit{
+color:white;
+background-color:tomato;
+width:100%;
+border:none;
+
+}
+
+</style>
